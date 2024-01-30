@@ -7,6 +7,7 @@ import { getSdk, Requester } from "./core/sdk";
 import { getPosts } from "./methods/getPosts";
 import { getPinnedPosts } from "./methods/getPinnedPosts";
 import { getPost } from "./methods/getPost";
+import { getPostById } from "./methods/getPostById";
 import { getComments } from "./methods/getComments";
 import { getLabels } from "./methods/getLabels";
 
@@ -52,6 +53,7 @@ export class GithubBlog {
 
   getPosts = getPosts(this);
   getPost = getPost(this);
+  getPostById = getPostById(this);
   getComments = getComments(this);
   getLabels = getLabels(this);
   getPinnedPosts = getPinnedPosts(this);
